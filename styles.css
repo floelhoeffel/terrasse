@@ -1,0 +1,105 @@
+
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin: 100px 0 0 100px;
+}
+
+.terrasse, .bohlen {
+    width: 3600px;
+    height: 2250px;
+    background-color: white;
+    
+}
+.bohlen {
+    background: none;
+}
+
+.reihe:nth-child(odd) .diele:nth-child(1) {
+    width: 3000px;
+    
+}
+
+.reihe:nth-child(odd) .diele:nth-child(2) {
+    width: 600px;
+    
+    position: absolute;
+    left: 3000px;
+    top: 0;
+}
+
+.reihe:nth-child(even) .diele:nth-child(1) {
+    width: 600px;
+    
+    left: 0;
+}
+
+.reihe:nth-child(even) .diele:nth-child(2) {
+    width: 3000px;
+    
+    position: absolute;
+    left: 600px;
+    top: 0;
+}
+
+.reihe {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.reihe > .diele {
+    border: 1px solid #ccc;
+    height: 145px;
+    
+    
+}
+
+.bohlen {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.balken {
+    width: 70px;
+    height: 2230px;
+    border: 1px dashed #CCC; 
+    position: absolute;
+}
+
+.balken:nth-child(1) {
+
+}
+.balken:nth-child(2) {
+    left: 565px;
+}
+.balken:nth-child(3) {
+    left: 1165px;
+}
+.balken:nth-child(4) {
+    left: 1765px;
+}
+.balken:nth-child(5) {
+    left: 2365px;
+}
+.balken:nth-child(6) {
+    left: 2965px;
+}
+.balken:nth-child(7) {
+    left: 3530px;
+}
